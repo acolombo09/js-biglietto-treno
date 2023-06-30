@@ -13,15 +13,20 @@ Questo richiederà un minimo di ricerca.
 
 const firstName = prompt("Inserisci il tuo nome");
 const lastName = prompt("Inserisci il tuo cognome");
+const reqKms = prompt("Quanti Km hai bisogno di percorrere?");
 const age = prompt("Inserisci la tua età");
+const pricePerKm = 0.21;
 
 document.getElementById("first-name").innerHTML = firstName;
 document.getElementById("last-name").innerHTML =  lastName;
 document.getElementById("age").innerHTML = age;
+document.getElementById("req-kms").innerHTML = reqKms;
 
-const pswGenerated = (firstName + lastName + age);
+const priceKms = (reqKms * pricePerKm);
 
-document.getElementById("psw-generated").innerHTML = pswGenerated;
+// console.log(priceKms + " euro");
+document.getElementById("price-kms").innerHTML = priceKms + " euro";
+
 
 if (age < 18) {
   console.log("Sei troppo piccolo, ecco il tuo sconto");
@@ -36,6 +41,3 @@ if (age < 18) {
     console.log("Paghi il prezzo base");
   }
 }
-
-
-

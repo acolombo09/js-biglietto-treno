@@ -16,10 +16,10 @@
 <body>
   <main class="bg-secondary">
     <div class="container d-flex align-items-center py-4 bg-body-tertiary">
-      <div class="form w-50 m-auto">
+      <div class="form w-50 m-auto text-center">
         <form>
-          <h1 class="h3 mb-3 fw-normal text-center">JS Password Generator wannabe</h1>
-          <p class="text-center">How to create your new password easily and secure</p>
+          <h1 class="h3 mb-3 fw-normal text-primary">JS Train Ticket</h1>
+          <p class="text-center">Unlinke Trenitalia, our trains are never late</p>
           <h6>First Name</h6>
           <div class="form-floating">
             <input type="firstname" class="form-control" id="floatingInput" placeholder="">
@@ -41,11 +41,32 @@
               <h3 id="age">Your Age</h3>
             </label>
           </div>
-          <h5 class="my-2 text-center text-danger">Password Generated</h5>
+          <h5 class="my-2 text-center text-danger">Requested Kilometers</h5>
           <div class="form-floating my-2">
-            <input type="pswgenerated" class="form-control" id="floatingInput" placeholder="">
+            <input type="reqkms" class="form-control" id="floatingInput" placeholder="">
             <label for="floatingInput">
-              <h2 id="psw-generated">Password Generated</h2>
+              <h2 id="req-kms">Requested Kilometers</h2>
+            </label>
+          </div>
+          <h5 class="my-2 text-center text-danger">Standard Ticket Price</h5>
+          <div class="form-floating my-2">
+            <input type="pricekms" class="form-control" id="floatingInput" placeholder="">
+            <label for="floatingInput">
+              <h2 id="price-kms">Standard Price</h2>
+            </label>
+          </div>
+          <h5 class="my-2 text-center text-danger">Free Coupon discount earned</h5>
+          <div class="form-floating my-2">
+            <input type="discountcalc" class="form-control" id="floatingInput" placeholder="">
+            <label for="floatingInput">
+              <h2 id="discont-calc">Discount</h2>
+            </label>
+          </div>
+          <h5 class="my-2 text-center text-danger">Final Ticket Price</h5>
+          <div class="form-floating my-2">
+            <input type="finalprice" class="form-control" id="floatingInput" placeholder="">
+            <label for="floatingInput">
+              <h2 id="final-price">Price Total</h2>
             </label>
           </div>
         </form>
