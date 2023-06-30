@@ -25,7 +25,7 @@ document.getElementById("req-kms").innerHTML = reqKms;
 const priceKms = (reqKms * pricePerKm);
 
 // console.log(priceKms + " euro");
-document.getElementById("price-kms").innerHTML = priceKms + " euro";
+document.getElementById("price-kms").innerHTML = priceKms + " €";
 
 const discountBaby = 20;
 const discountOver = 40;
@@ -36,7 +36,7 @@ if (age < 18) {
   } else if (age > 65){
     document.getElementById("discount-calc").innerHTML = (discountOver + " %");
   } else {
-    console.log("Paghi il prezzo base");
+    document.getElementById("discount-calc").innerHTML = "No discounts applied";
 }
 
 if (age < 18) {
@@ -51,4 +51,4 @@ if (age < 18) {
 // console.log((priceKms * discountOver / 100));
 
 const finalPrice = (priceKms - coupon);
-document.getElementById("final-price").innerHTML = finalPrice;
+document.getElementById("final-price").innerHTML = finalPrice + " €";
