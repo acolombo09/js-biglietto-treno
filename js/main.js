@@ -13,22 +13,29 @@ Questo richiederà un minimo di ricerca.
 
 const firstName = prompt("Inserisci il tuo nome");
 const lastName = prompt("Inserisci il tuo cognome");
-
 const age = prompt("Inserisci la tua età");
 
 document.getElementById("first-name").innerHTML = firstName;
 document.getElementById("last-name").innerHTML =  lastName;
-
-
 document.getElementById("age").innerHTML = age;
 
-console.log(firstName + lastName);
-const pswGenerated = (firstName + lastName);
+const pswGenerated = (firstName + lastName + age);
 
 document.getElementById("psw-generated").innerHTML = pswGenerated;
 
-const bonusNumber = fixedNumber + parseInt((age));
-// document.getElementById("bonus-number").innerHTML = bonusNumber;
+if (age < 18) {
+  console.log("Sei troppo piccolo, ecco il tuo sconto");
+} else {
+  console.log("Bene, hai l'età giusta per non avere uno sconto");
+
+  if (age > 65) {
+    console.log("Compimenti, oltre che la pensione anche il maggiore sconto");
+  } else if (age >= 18 && age <= 40){
+    console.log("Mi spiace, non sei abbastanza anziano, +10% di rincaro");
+  } else {
+    console.log("Paghi il prezzo base");
+  }
+}
 
 
 
