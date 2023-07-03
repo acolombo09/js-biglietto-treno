@@ -22,7 +22,7 @@ document.getElementById("last-name").innerHTML =  lastName;
 document.getElementById("age").innerHTML = age;
 document.getElementById("req-kms").innerHTML = reqKms;
 
-const priceKms = (reqKms * pricePerKm);
+const priceKms = (reqKms * pricePerKm).toFixed(2);
 
 // console.log(priceKms + " euro");
 document.getElementById("price-kms").innerHTML = priceKms + " €";
